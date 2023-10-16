@@ -58,7 +58,7 @@ class Program
         {
             int userGuess = GetIntegerInput("Угадайте число от 0 до 100: ");
             attempts++;
-
+            Console.WriteLine($"Попытка номер {attempts}");
             if (userGuess < randomNumber)
                 Console.WriteLine("Загаданное число больше, думай.");
             else if (userGuess > randomNumber)
